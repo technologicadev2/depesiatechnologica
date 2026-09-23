@@ -1,0 +1,79 @@
+/* public/assets/css/projets.css */
+.bg-green {
+    background-color: #ccffcc !important; /* Vert clair */
+    color: #000; /* Texte noir pour lisibilité */
+}
+        #ordres-service-list .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        #ordres-service-list .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #ordres-service-list .table th,
+        #ordres-service-list .table td {
+            vertical-align: middle;
+            text-align: center;
+            padding: 0.75rem;
+        }
+
+        #ordres-service-list .table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+
+        #ordres-service-list .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+
+        #ordres-service-list .delete-ordre-pair {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #f8d7da;
+            color: #dc3545;
+            transition: background-color 0.2s;
+        }
+
+        #ordres-service-list .delete-ordre-pair:hover {
+            background-color: #f5c6cb;
+        }
+
+        #ordres-service-list .delete-ordre-pair i {
+            font-size: 16px;
+        }
+
+        .dt-buttons {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+}
+
+.dt-buttons .btn {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+#year-filter-select {
+    height: 38px !important;
+    width: 150px !important;
+    flex-shrink: 0 !important;
+}
+
+
+#year-filter-paiementsTable,
+#year-filter-decomptesTable {
+    height: 38px !important;
+    width: 170px !important;
+    flex-shrink: 0 !important;
+}

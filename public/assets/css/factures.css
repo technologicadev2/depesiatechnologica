@@ -1,0 +1,67 @@
+
+    #factureModal .modal-content {
+        border-radius: 8px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    #factureModal .modal-header {
+        border-bottom: 1px solid #dee2e6;
+        padding: 1.5rem;
+    }
+
+    #factureModal .modal-body {
+        background-color: #f8f9fa;
+    }
+
+    #factureModal .card {
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    #factureModal .card-title {
+        color: #333;
+        font-weight: 600;
+    }
+
+    #factureModal .form-control,
+    #factureModal .form-select {
+        border-radius: 4px;
+        transition: border-color 0.2s ease-in-out;
+    }
+
+    #factureModal .form-control:focus,
+    #factureModal .form-select:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    #factureModal .form-label {
+        font-weight: 500;
+        color: #444;
+    }
+
+    #factureModal .btn-primary {
+        padding: 0.5rem 1.5rem;
+    }
+
+    #factureModal .btn-outline-secondary {
+        padding: 0.5rem 1.5rem;
+    }
+
+    #filePreview img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 4px;
+        background: #fff;
+    }
+
+    .file-link {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .file-link:hover {
+            color: #0056b3;
+        }
+        

@@ -1,0 +1,382 @@
+.clickable-card .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    min-height: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+#salaryChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+.clickable-card:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card-user {
+    background-color: #e6f3ff;
+}
+.card-depenses {
+    background-color: #ffe6e6;
+}
+.card-salaries {
+    background-color: #e6ffe6;
+}
+.card-projects {
+    background-color: #f0f0f0;
+}
+.card-presence {
+    background-color: #f3e6ff;
+}
+.card-conge {
+    background-color: #fff5e0;
+}
+
+.icon-circle {
+    width: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.icon-circle:hover {
+    background-color: #007bff !important;
+    color: white;
+}
+.doc-status {
+    font-size: 1.2rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.doc-complete {
+    color: #28a745;
+}
+.doc-incomplete {
+    color: #ff7684;
+}
+.doc-warning {
+    color: #ffc107;
+}
+.tooltip-inner {
+    max-width: 300px;
+    text-align: left;
+}
+.popover {
+    max-width: 300px;
+    font-size: 0.9rem;
+}
+.popover-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.popover-body {
+    white-space: pre-line;
+    color: #333;
+}
+.statistics-chart-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+}
+.statistics-chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.statistics-chart-center h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.statistics-chart-center small {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.statistics-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.statistics-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.statistics-legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.employee-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1050;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+.employee-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.employee-overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+.employee-overlay-header h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.employee-overlay .list-group-item {
+    font-size: 0.95rem;
+}
+.employee-overlay .badge {
+    font-size: 0.75rem;
+}
+.employee-overlay .alert {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+.col-12.col-sm-6.col-md-4.col-lg-2.col-xl-2 {
+    flex: 0 0 20%;
+    max-width: 16%;
+}
+.bg-light-red {
+    background-color: #ff6b6b !important;
+    color: #721c24 !important;
+}
+.bg-light-yellow {
+    background-color: #ffe066 !important;
+    color: #856404 !important;
+}
+.bg-light-green {
+    background-color: #51cf66 !important;
+    color: #2f4e3a !important;
+}
+.text-light-red {
+    color: #721c24 !important;
+}
+.text-light-yellow {
+    color: #856404 !important;
+}
+.text-light-green {
+    color: #2f4e3a !important;
+}
+.bg-light-red-opacity-10 {
+    background-color: rgba(255, 107, 107, 0.1) !important;
+}
+.bg-light-yellow-opacity-10 {
+    background-color: rgba(255, 224, 102, 0.1) !important;
+}
+.border-light-red {
+    border-color: #ff6b6b !important;
+}
+.border-light-yellow {
+    border-color: #ffe066 !important;
+}
+.badge.bg-light-red,
+.badge.bg-light-yellow,
+.badge.bg-light-green {
+    color: #fff !important;
+}
+
+.list-group-item.bg-light-red-opacity-10,
+.list-group-item.bg-light-yellow-opacity-10 {
+    color: #333 !important;
+}
+.list-group-item.bg-light-red-opacity-10 .text-muted,
+.list-group-item.bg-light-yellow-opacity-10 .text-muted {
+    color: #666 !important;
+}
+
+.col-12.col-sm-6.col-md-4.col-lg-2.col-xl-2 {
+    flex: 0 0 auto;
+    max-width: 100%; 
+}
+
+
+.clickable-card .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    min-height: 150px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 576px) {
+    .clickable-card .card {
+        min-height: 120px; 
+    }
+}
+.clickable-card:hover .card,
+.clickable-card:active .card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.clickable-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.clickable-card .card {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    min-height: 150px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.clickable-card .card-body {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+@media (max-width: 576px) {
+    .clickable-card .card {
+        min-height: 120px; 
+    }
+}
+.col-md-8.order-3.order-lg-4 .card,
+.col-md-4.order-4.order-lg-5 .card {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.row.g-4:has(.col-md-8.order-3.order-lg-4, .col-md-4.order-4.order-lg-5) {
+    margin-bottom: 1rem; 
+}
+
+.col-md-12.mb-4 .card {
+    margin-top: 0;
+}
+.scroll-icon-container {
+    position: fixed;
+    bottom: 50px; /* From your provided CSS */
+    right: 15px;
+    z-index: 1100; /* Higher to ensure prominence over cards */
+}
+
+.scroll-icon {
+    cursor: pointer;
+    background-color: #696cff;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for prominence */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-icon:hover {
+    background-color: #696cff !important;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.scroll-icon .bx-chevron-up,
+.scroll-icon .bx-chevron-down {
+    transition: transform 0.3s ease;
+}
+.employee-overlay .list-group-item strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.employee-overlay .list-group-item small.text-muted {
+    font-size: 0.85rem;
+}
+.employee-overlay .badge {
+    padding: 6px 12px;
+    font-weight: 500;
+}
+.alert.alert-light-green {
+    background-color: rgba(81, 207, 102, 0.1);
+    border: 1px solid #51cf66;
+    color: #2f4e3a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Assure que la pagination est visible et bien placée */
+.pagination {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+/* Évite que le conteneur parent cache la pagination */
+.card-body,
+.table-responsive {
+    overflow: visible !important;           /* très important si overflow hidden */
+    position: relative;
+}
+
+/* Si la pagination est trop petite ou cachée */
+.pagination .page-item .page-link {
+    display: block !important;
+    min-width: 40px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Pour les thèmes sombres ou customs qui cassent les couleurs */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;  /* bleu Bootstrap par défaut */
+    border-color: #0d6efd;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #0d6efd;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+/* Si tu as un conteneur avec height fixe ou max-height */
+.card-body .table-responsive {
+    max-height: none !important;
+    height: auto !important;
+}

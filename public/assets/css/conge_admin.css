@@ -1,0 +1,193 @@
+.datatables-basic .dataTable {
+    width: 100% !important;
+}
+.dt-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.dt-buttons .btn {
+    margin-right: 10px;
+}
+.dataTables_wrapper .dataTables_filter {
+    display: flex;
+    align-items: center;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 10px;
+    max-width: 200px;
+}
+.dt-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#modalConge .modal-content, #modalEditConge .modal-content {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+#modalConge .modal-header, #modalEditConge .modal-header {
+    border-bottom: 2px solid #000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+#modalConge .modal-header img, #modalEditConge .modal-header img {
+    max-width: 80px;
+    margin-right: 20px;
+}
+#modalConge .modal-body, #modalEditConge .modal-body {
+    padding: 20px;
+    background-color: #fff;
+}
+#modalConge .form-label, #modalEditConge .form-label {
+    font-weight: bold;
+}
+#modalConge .form-control, #modalEditConge .form-control {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+#modalConge .form-control[readonly], #modalEditConge .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.modal-body .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.modal-body .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-check {
+    margin-top: 10px;
+}
+.form-check-label {
+    font-size: 14px;
+}
+.signature-pad {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.signature-buttons {
+    margin-top: 10px;
+}
+.action-icon {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    pointer-events: auto;
+    display: inline-block !important;
+    margin-right: 10px;
+}
+.action-icon:hover {
+    color: #0056b3;
+}
+.download-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+.download-icon.enabled {
+    color: #28a745;
+    cursor: pointer;
+}
+.download-icon.enabled:hover {
+    color: #218838;
+}
+.download-icon.disabled {
+    color: #6c757d;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.badge-pending {
+    background-color: #fd7e14;
+    color: #fff;
+}
+.badge-accepted {
+    background-color: #28a745;
+    color: #fff;
+}
+.badge-rejected {
+    background-color: #dc3545;
+    color: #fff;
+}
+.fc-header-toolbar {
+    display: flex !important;
+    justify-content: space-between;
+}
+.fc-button-group {
+    display: inline-block !important;
+}
+.fc-prev-button, .fc-next-button {
+    background-color: transparent !important;
+    border: 1px solid #006699 !important;
+    color: #006699 !important;
+    padding: 5px 10px !important;
+    border-radius: 4px !important;
+}
+.fc-prev-button:hover, .fc-next-button:hover {
+    background-color: #e6f3ff !important;
+    color: #004466 !important;
+}
+.fc-prev-button:focus, .fc-next-button:focus,
+.fc-prev-button:active, .fc-next-button:active {
+    background-color: #cce6ff !important;
+    color: #004466 !important;
+    outline: none !important;
+}
+.fc-event-primary {
+    background-color: #80d4ff !important;
+    border-color: #80d4ff !important;
+    color: #1a1a1a !important;
+}
+.fc-event {
+    font-size: 1rem !important;
+    padding: 8px 12px !important;
+    line-height: 1.5 !important;
+    min-height: 40px !important;
+    border-radius: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.fc-event-main {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.fc-daygrid-event {
+    margin: 4px 2px !important;
+}
+.leave-details {
+    padding: 8px 12px;
+}
+.leave-details p {
+    margin: 0 0 8px;
+}
+.leave-details p:last-child {
+    margin-bottom: 0;
+}
+.delete-icon {
+    cursor: pointer;
+    color: #ff3e1d;
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+.delete-icon:hover {
+    color: #cc2e0f;
+}
+.edit-icon {
+    cursor: pointer;
+    color: #3498db;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+.edit-icon:hover {
+    color: #2980b9;
+}
